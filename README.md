@@ -41,3 +41,7 @@ This task helped understand the principles of:
   ## Screenshots for the Mobile Responsive Design
   ![image](https://github.com/user-attachments/assets/56861251-7b1a-43f3-88c7-b8ee704cf818)
   
+  ![image](https://github.com/user-attachments/assets/a17a3995-0111-4f5c-88d5-f85a40b2463d)
+  ![image](https://github.com/user-attachments/assets/22d569c9-4a19-444f-8474-225b07e98872)
+
+
