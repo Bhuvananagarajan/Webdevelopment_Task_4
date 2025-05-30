@@ -1,0 +1,330 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff9f5;
+  color: #2c003e;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #2c003e;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #ffc2a1;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffd6ba;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff9f9f;
+}
+
+.btn,
+.appointment-btn {
+  background: #d77aa1;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s;
+  white-space: nowrap;
+}
+
+.btn:hover,
+.appointment-btn:hover {
+  background: #8e3a59;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 80px 10%;
+  align-items: center;
+  background: linear-gradient(135deg, #2c003e, #6b1e75);
+  color: #fff;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #ff9f9f;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #ffe6e6;
+}
+
+.hero-img {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-img img {
+  max-width: 100%;
+  border-radius: 12px;
+  height: auto;
+}
+
+/* Services */
+.services {
+  padding: 60px 10%;
+  text-align: center;
+  background: #fff3eb;
+}
+
+.services h2 {
+  font-size: 2rem;
+  color: #6b1e75;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.service {
+  background: #ffd6ba;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.service img {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Rentals */
+.rentals {
+  padding: 60px 10%;
+  text-align: center;
+  background: #ffe0d9;
+}
+
+.rentals h2 {
+  font-size: 2rem;
+  color: #8e3a59;
+  margin-bottom: 40px;
+}
+
+.rentals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.rental {
+  background: #ffb7a3;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.rental img {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Gallery */
+.gallery {
+  padding: 60px 10%;
+  background: #faf0f8;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  color: #6b1e75;
+  margin-bottom: 30px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Contact */
+.contact {
+  padding: 40px 10%;
+  text-align: center;
+  background: #fff;
+}
+
+.contact h2 {
+  color: #8e3a59;
+  margin-bottom: 10px;
+}
+
+.contact a {
+  color: #6b1e75;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  background: #2c003e;
+  color: #ffe6e6;
+  text-align: center;
+  padding: 20px 10%;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #ffb7a3;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 5%;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .appointment-btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  .hero-text {
+    margin-bottom: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-img img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .services,
+  .rentals,
+  .gallery,
+  .contact,
+  footer {
+    padding: 40px 5%;
+  }
+
+  .services-grid,
+  .rentals-grid,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service img,
+  .rental img {
+    max-width: 100px;
+    margin: 0 auto 15px;
+    display: block;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+  }
+}
